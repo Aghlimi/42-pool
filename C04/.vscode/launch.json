@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/aghlimi/Desktop/work/C04/ex05",
+      "program": "/Users/aghlimi/Desktop/work/C04/ex05/build/Debug/outDebug"
+    }
+  ]
+}

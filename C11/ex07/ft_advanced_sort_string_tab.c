@@ -6,7 +6,7 @@
 /*   By: aghlimi <aghlimi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/15 11:14:47 by aghlimi           #+#    #+#             */
-/*   Updated: 2024/07/15 11:18:45 by aghlimi          ###   ########.fr       */
+/*   Updated: 2024/07/16 17:25:17 by aghlimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,18 +21,22 @@ void	ft_swap(char **t, char **v)
 
 void	ft_advanced_sort_string_tab(char **tab, int (*cmp)(char *, char *))
 {
-	int		i;
-	int		j;
-	char	*t1;
-	char	*t2;
+	int	i;
+	int	j;
 
 	i = 0;
-	while (tab[i] && tab[i + 1])
+	if (!tab)
+		return ;
+	while (tab[i])
 	{
-		if ((*cmp)(tab[i], tab[i + 1]) > 0)
+		j = i + 1;
+		while (tab[j])
 		{
-			ft_swap(&tab[i], &tab[i + 1]);
-			i = 0;
+			if (cmp(tab[i], tab[j]) > 0)
+			{
+				ft_swap(&tab[i], &tab[j]);
+			}
+			j++;
 		}
 		i++;
 	}

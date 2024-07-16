@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/aghlimi/Desktop/work/C11/ex00",
-      "program": "/Users/aghlimi/Desktop/work/C11/ex00/build/Debug/outDebug"
+      "cwd": "/Users/aghlimi/Desktop/42-pool/C00/ex00",
+      "program": "/Users/aghlimi/Desktop/42-pool/C00/ex00/build/Debug/outDebug"
     }
   ]
 }

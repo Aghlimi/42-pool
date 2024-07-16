@@ -6,7 +6,7 @@
 /*   By: aghlimi <aghlimi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/14 11:30:21 by aghlimi           #+#    #+#             */
-/*   Updated: 2024/07/14 11:40:49 by aghlimi          ###   ########.fr       */
+/*   Updated: 2024/07/16 16:59:27 by aghlimi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_any(char **tab, int (*f)(char *))
 	i = 0;
 	b = 0;
 	while (tab[i])
-		if ((*f)(tab[i++]) != 0)
+		if ((*f)(tab[i++]))
 			return (1);
 	return (0);
 }

@@ -1,0 +1,4 @@
+./rostring "abc   " | cat -e
+./rostring "Que la      lumiere soit et la lumiere fut    "| cat -e
+./rostring "     AkjhZ zLKIJz , 23y"| cat -e
+./rostring | cat -e
